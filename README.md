@@ -2,7 +2,7 @@
 
 **Repository:** naze-foundation
 **Type:** Foundation Documentation
-**Status:** Foundation — Core & Engineering Standard Initialized
+**Status:** Foundation — Core & Engineering/Security Standards Initialized
 
 ---
 
@@ -22,7 +22,8 @@ naze-foundation/
 ├── core/
 │   └── NAZE_CORE.md
 └── standards/
-    └── ENGINEERING_STANDARD.md
+    ├── ENGINEERING_STANDARD.md
+    └── SECURITY_STANDARD.md
 ```
 
 Repository hanya berisi dokumen yang kebutuhannya nyata dan terdokumentasi. Struktur akan berkembang mengikuti prinsip yang sama.
@@ -35,9 +36,13 @@ Repository hanya berisi dokumen yang kebutuhannya nyata dan terdokumentasi. Stru
 
 `standards/ENGINEERING_STANDARD.md` adalah Engineering Standard Level 2 yang menerjemahkan prinsip NAZE_CORE.md menjadi standar yang dapat diterapkan pada proyek nyata: lifecycle, requirement, specification, architecture, coding, dependency, configuration & secrets, error handling, testing, verification, code review, version control, change management, technical debt, dokumentasi, AI-assisted development, definition of done, quality gates, anti-patterns, dan traceability.
 
+## Fungsi SECURITY_STANDARD.md
+
+`standards/SECURITY_STANDARD.md` adalah Security Standard Level 2 yang menerjemahkan prinsip keamanan NAZE_CORE.md menjadi standar keamanan technology-agnostic: security philosophy, threat modeling, asset classification, secrets management, authentication, authorization, perlindungan data, input/output handling, file upload, API security, rate limiting, logging, dependency & third-party security, AI security, database & backup security, security testing, vulnerability management, incident response, secure development lifecycle, security definition of done, anti-patterns, dan security exceptions.
+
 ## Status Repository
 
-**Core & Engineering Standard Initialized.** Repository berisi NAZE_CORE.md, ENGINEERING_STANDARD.md, dan README.md. Tidak ada source code aplikasi, database, API, authentication, deployment, CI/CD, website, logo, atau fitur produk pada tahap ini. Status legal Naze belum ditetapkan dan tidak diklaim oleh dokumen mana pun di repository ini.
+**Core & Standards Initialized.** Repository berisi NAZE_CORE.md, ENGINEERING_STANDARD.md, SECURITY_STANDARD.md, dan README.md. Tidak ada source code aplikasi, database, API, authentication, deployment, CI/CD, website, logo, atau fitur produk pada tahap ini. Status legal Naze belum ditetapkan dan tidak diklaim oleh dokumen mana pun di repository ini.
 
 ## Dokumen Foundation sebagai Acuan
 
