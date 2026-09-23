@@ -18,8 +18,7 @@ Membangun pondasi yang menjadi sumber acuan tunggal untuk seluruh produk Naze di
 
 ```
 naze-foundation/
-âââ README.md
-âââ core/
+âââ README.md*âââ core/
     âââ NAZE_CORE.md
 ```
 
@@ -39,13 +38,17 @@ Dokumen turunan Naze mengikuti urutan otoritas berikut:
 
 ```
 NAZE_CORE
-    â
+    |
+    v
 Engineering Standards
-    â
+    |
+    v
 Product Standards
-    â
+    |
+    v
 Security Standards
-    â
+    |
+    v
 Individual Products
 ```
 

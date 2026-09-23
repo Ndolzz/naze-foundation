@@ -9,7 +9,7 @@
 
 ## 1. Naze Identity
 
-Naze adalah nama inisiatif yang mencakup seluruh produk, standar, dan praktik engineering yang dikembangkan di bawah satu identitas yang sama. Pada tahap ini, Naze belum ditetapkan sebagai entitas legal tertentu; status hukumnya akan didefinisikan secara eksplisit ketika keputusan tersebut telah dibuat. Dokumen ini tidak membuat klaim legal atas bentuk usaha apa pun.
+Naze adalah nama inisiatif yang mencakup seluruh produk, standar, dan praktik engineering yang dikembangkan di bawah satu identitas yang sama. Pada tahap ini, Naze belum ditetapkan sebagai entitas legal tertentu; status hukumnya akan didefinisikan oleh pihak yang berwenang ketika keputusan tersebut telah dibuat. Dokumen ini tidak membuat klaim legal atas bentuk usaha apa pun.
 
 ## 2. Purpose
 
@@ -35,7 +35,7 @@ Membangun produk yang berkualitas, dapat dipercaya, dan tahan lama â produk
 
 ## 6. Product Philosophy
 
-Produk Naze dibangun untuk menyelesaikan masalah nyata dengan cakupan yang jelas. Produk tidak didefinisikan ooeh jumlah fitur, melainkan oleh kualitas, kejelasan batas, dan kemampuan dipelihara dalam jangka panjang. Keputusan fitur mengikuti kebutuhan yang terverifikasi, bukan asumsi.
+Produk Naze dibangun untuk menyelesaikan masalah nyata dengan cakupan yang jelas. Produk tidak didefinisikan oleh jumlah fitur, melainkan oleh kualitas, kejelasan batas, dan kemampuan dipelihara dalam jangka panjang. Keputusan fitur mengikuti kebutuhan yang terverifikasi, bukan asumsi.
 
 ## 7. Engineering Philosophy
 
@@ -52,7 +52,7 @@ Penggunaan AI dalam pengembangan Naze diizinkan sebagai alat bantu, dengan batas
 2. Output AI wajib ditinjau sebelum dianggap benar.
 3. AI tidak boleh mengarang informasi, struktur, atau keputusan yang belum ditetapkan.
 4. AI tidak boleh diminta untuk melewati proses spesifikasi dan review.
-5. Seluruh hasil bantuan AI tunduk pada standar kualitas yang sama dengan pekejjaan manusia.
+5. Seluruh hasil pekerjaan bantuan AI tunduk pada standar kualitas yang sama dengan peperjaan manusia.
 
 ## 9. Specification Integrity
 
@@ -74,31 +74,59 @@ Pada tahap ini, belum ada produk individu yang ditetapkan. Struktur produk akan 
 
 ```
 NAZE_CORE
-    â
+    |
+    v
 Engineering Standards
-    â
+    |
+    v
 Product Standards
-    â
+    |
+    v
 Security Standards
-    â
+    |
+    v
 Individual Products
 ```
 
-Setiap produk individu wajib merujuk pada seluruh lapisan di_atasnya.
+Setiap produk individu wajib merujuk pada seluruh lapisan di atasnya.
 
 ## 12. Repository Principles
 
 1. `naze-foundation` adalah repository pusat untuk dokumentasi fondasi â bukan aplikasi, bukan produk pengguna.
 2. Repository ini tidak memuat source code aplikasi, database, API, authentication, deployment, CI/CD, atau aset visual pada tahap ini.
-3. Setiap dokumen memiliki satu tanggung jawab yang jelas; duplikasi diperbolehkan, dokumen yang tumpang tindih tidak.
+3. Setiap dokumen memiliki satu tanggung jawab yang jelas; duplikasi boleh diterima, dokumen yang tumpang tindih tidak.
 4. Struktur repository hanya berkembang ketika ada kebutuhan nyata yang terdokumentasi.
 
 ## 13. Change Management
 
-1. Perubahan pada dokumen Level 1 (NAZE_CORE.md) memerlukan pertimbangan khusus karena berdampak pada seluruh dokumen turunan.
-2. Setiap perubahan harus dapat diperiksa melalui Git diff.
-3. Perubahan yang bertentangan dengan dokumen turunan wajib disertai peninjauan dokumen turunan tersebut.
-4. Penambahan dokumen baru hanya dilakukan ketika kebutuhannya nyata dan konsisten dengan struktur fondasi.
+1. Perubahan pada dokumen Level 1 (NAZE_CORE.md) memerlukan proses governance yang terdokumentasi karena berdampak pada seluruh dokumen turunan.
+2. Setiap perubahan Level 1 wajib melalui proses berikut:
+
+```
+Change Proposal
+    |
+    v
+Impact Analysis
+    |
+    v
+Review
+    |
+    v
+Approval
+    |
+    v
+Git Commit
+```
+
+3. Setiap perubahan Level 1 minimal harus memiliki:
+   1. alasan perubahan;
+   2. dampak terhadap dokumen turunan;
+   3. review;
+   4. persetujuan pihak yang memiliki kewenangan atas Naze (lihat bagian 16, Governance Authority);
+   5. riwayat perubahan melalui Git.
+4. Setiap perubahan harus dapat diperiksa melalui Git diff.
+5. Perubahan yang bertentangan dengan dokumen turunan wajib disertai peninjauan dan penyesuaian dokumen turunan tersebut.
+6. Penambahan dokumen baru hanya dilakukan ketika kebutuhannya nyata dan konsisten dengan struktur fondasi.
 
 ## 14. Quality Standard
 
@@ -118,11 +146,14 @@ Ketika menghadapi keputusan yang belum terdefinisi:
 
 ## 16. Ownership
 
-Status kepemilikan formal Naze belum ditetapkan pada tahap ini dan akan didefinisikan ketika struktur legal dan organisasinya diputuskan. Sementara itu, tanggung jawab atas dokumen fondasi ini dipegang oleh penderi inisiatif Naze, dan semua perubahan berlangsung melalui proses perubahan yang terdokumentasi pada bagian 13.
+Dua hal dibedakan secara eksplisit:
+
+1. **Legal ownership.** Status kepemilikan legal Naze belum ditetapkan pada tahap ini. Dokumen ini tidak menyatakan bahwa Naze adalah badan hukum, perusahaan terdaftar, atau memiliki struktur legal tertentu. Status legal akan didefinisikan secara eksplisit ketika keputusan tersebut dibuat.
+2. **Governance authority.** Terlepan daristatus legal, kewenangan untuk memetujiu perubahan Level 1 saat ini dipegang oleh Naze founder/owner, yaitu pihak yang memprakarsai dan memiliki tanggung jawab atas inisiatif Naze. Semua perubahan berlangsung melalui proses yang terdokumentasi pada bagian 13.
 
 ## 17. Long-Term Direction
 
-Arah jangka panjang Naze adalah tumbuh dari fondasi yang disiplin menuju kumpulan produk yang matang, dengan standar yang stabil dan dapat diwariskan antar orang dan antar waktu. Dokumen ini dirancang agar tetap relevan ketika produk, tim, dan teknologi di sekelilingnya berubah.
+Arah jangka panjang Naze adalah tumbua dari fondasi yang disiplin menuj kumpulan produk yang matang, dengan standar yang stabil dan dapat diwariskan antar orang dan antar waktu. Dokumen ini dirancang agar tetap relevan ketika produk, tim, dan teknologi di sekelilingnya berubah.
 
 ## 18. Core Rule
 
@@ -136,7 +167,11 @@ Arah jangka panjang Naze adalah tumbuh dari fondasi yang disiplin menuju kumpula
 | 2 | Engineering / Product / Security Standards | Turunan â wajib konsisten dengan Level 1 |
 | 3 | Individual Product Documents | Turunan â wajib konsisten dengan Level 1 dan 2 |
 
-Dokumen dengan level lebih rendah tidak dapat meniadakan dokumen dengan level lebih tinggi. Konflik antar dokumen diselesaikan dengan merujuk pada level tertinggi, lalu memperbaiki dokumen yang bertentangan.
+Aturan konflik dokumen:
+
+1. Dokumen dengan level lebih rendah tidak boleh bertentangan dengan dokumen level lebih tinggi.
+2. Jika ditemukan konflik, dokumen level lebih rendah harus diperbaiki agar konsisten.
+3. Jika konflik menunjukkan bahwa Level 1 perlu diubah, perubahan tersebut wajib melalui proses governance yang ditentukan pada bagian 13.
 
 ---
 
