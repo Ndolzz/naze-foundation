@@ -2,7 +2,7 @@
 
 **Repository:** naze-foundation
 **Type:** Foundation Documentation
-**Status:** Foundation â Core Initialized
+**Status:** Foundation — Core & Engineering Standard Initialized
 
 ---
 
@@ -12,25 +12,32 @@ Naze Foundation adalah repository pusat untuk dokumentasi fondasi Naze. Ini buka
 
 ## Tujuan Repository
 
-Membangun pondasi yang menjadi sumber acuan tunggal untuk seluruh produk Naze di masa depan â sebelum ada satu baris kode produk ditulis.
+Membangun pondasi yang menjadi sumber acuan tunggal untuk seluruh produk Naze di masa depan — sebelum ada satu baris kode produk ditulis.
 
 ## Struktur Repository
 
 ```
 naze-foundation/
-âââ README.md*âââ core/
-    âââ NAZE_CORE.md
+├── README.md
+├── core/
+│   └── NAZE_CORE.md
+└── standards/
+    └── ENGINEERING_STANDARD.md
 ```
 
-Pada tahap ini, repository sengaja hanya berisi dua dokumen. Struktur akan berkembang hanya ketika kebutuhan nyata dan terdokumentasi muncul.
+Repository hanya berisi dokumen yang kebutuhannya nyata dan terdokumentasi. Struktur akan berkembang mengikuti prinsip yang sama.
 
 ## Fungsi NAZE_CORE.md
 
-`core/NAZE_CORE.md` adalah dokumen fondasi dengan otoritas tertinggi. Dokumen tersebut mendefinisikan identitas, tujuan, visi, misi, prinsip inti, filsafat produk dan engineering, kebijakan AI, prinsip keamanan, struktur produk, prinsip repository, manajemen perubahan, standar kualitas, kerangka keputusan, kepemilikan, arah jangka panjang, aturan inti, dan tingkat otoritas dokumen.
+`core/NAZE_CORE.md` adalah dokumen fondasi dengan otoritas tertinggi (Level 1). Dokumen tersebut mendefinisikan identitas, tujuan, visi, misi, prinsip inti, filsafat produk dan engineering, kebijakan AI, prinsip keamanan, struktur produk, prinsip repository, manajemen perubahan, standar kualitas, kerangka keputusan, kepemilikan, arah jangka panjang, aturan inti, dan tingkat otoritas dokumen.
+
+## Fungsi ENGINEERING_STANDARD.md
+
+`standards/ENGINEERING_STANDARD.md` adalah Engineering Standard Level 2 yang menerjemahkan prinsip NAZE_CORE.md menjadi standar yang dapat diterapkan pada proyek nyata: lifecycle, requirement, specification, architecture, coding, dependency, configuration & secrets, error handling, testing, verification, code review, version control, change management, technical debt, dokumentasi, AI-assisted development, definition of done, quality gates, anti-patterns, dan traceability.
 
 ## Status Repository
 
-**Core Initialized.** Hanya NAZE_CORE.md dan README.md yang tersedia. Tidak ada source code aplikasi, database, API, authentication, deployment, CI/CD, website, logo, atau fitur produk pada tahap ini. Status legal Naze belum ditetapkan dan tidak diklaim oleh dokumen mana pun di repository ini.
+**Core & Engineering Standard Initialized.** Repository berisi NAZE_CORE.md, ENGINEERING_STANDARD.md, dan README.md. Tidak ada source code aplikasi, database, API, authentication, deployment, CI/CD, website, logo, atau fitur produk pada tahap ini. Status legal Naze belum ditetapkan dan tidak diklaim oleh dokumen mana pun di repository ini.
 
 ## Dokumen Foundation sebagai Acuan
 
