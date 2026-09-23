@@ -2,7 +2,7 @@
 
 **Repository:** naze-foundation
 **Type:** Foundation Documentation
-**Status:** Foundation — Core & Engineering/Security Standards Initialized
+**Status:** Foundation — Core & Level 2 Standards Initialized
 
 ---
 
@@ -23,7 +23,8 @@ naze-foundation/
 │   └── NAZE_CORE.md
 └── standards/
     ├── ENGINEERING_STANDARD.md
-    └── SECURITY_STANDARD.md
+    ├── SECURITY_STANDARD.md
+    └── PRODUCT_STANDARD.md
 ```
 
 Repository hanya berisi dokumen yang kebutuhannya nyata dan terdokumentasi. Struktur akan berkembang mengikuti prinsip yang sama.
@@ -32,17 +33,15 @@ Repository hanya berisi dokumen yang kebutuhannya nyata dan terdokumentasi. Stru
 
 `core/NAZE_CORE.md` adalah dokumen fondasi dengan otoritas tertinggi (Level 1). Dokumen tersebut mendefinisikan identitas, tujuan, visi, misi, prinsip inti, filsafat produk dan engineering, kebijakan AI, prinsip keamanan, struktur produk, prinsip repository, manajemen perubahan, standar kualitas, kerangka keputusan, kepemilikan, arah jangka panjang, aturan inti, dan tingkat otoritas dokumen.
 
-## Fungsi ENGINEERING_STANDARD.md
+## Fungsi Dokumen Level 2
 
-`standards/ENGINEERING_STANDARD.md` adalah Engineering Standard Level 2 yang menerjemahkan prinsip NAZE_CORE.md menjadi standar yang dapat diterapkan pada proyek nyata: lifecycle, requirement, specification, architecture, coding, dependency, configuration & secrets, error handling, testing, verification, code review, version control, change management, technical debt, dokumentasi, AI-assisted development, definition of done, quality gates, anti-patterns, dan traceability.
-
-## Fungsi SECURITY_STANDARD.md
-
-`standards/SECURITY_STANDARD.md` adalah Security Standard Level 2 yang menerjemahkan prinsip keamanan NAZE_CORE.md menjadi standar keamanan technology-agnostic: security philosophy, threat modeling, asset classification, secrets management, authentication, authorization, perlindungan data, input/output handling, file upload, API security, rate limiting, logging, dependency & third-party security, AI security, database & backup security, security testing, vulnerability management, incident response, secure development lifecycle, security definition of done, anti-patterns, dan security exceptions.
+- **`standards/ENGINEERING_STANDARD.md`** — menerjemahkan prinsip NAZE_CORE.md menjadi standar engineering yang dapat diterapkan pada proyek nyata: lifecycle, requirement, specification, architecture, coding, dependency, configuration & secrets, error handling, testing, verification, code review, version control, change management, technical debt, dokumentasi, AI-assisted development, definition of done, quality gates, anti-patterns, dan traceability.
+- **`standards/SECURITY_STANDARD.md`** — menerjemahkan prinsip keamanan NAZE_CORE.md menjadi standar keamanan technology-agnostic: security philosophy, threat modeling, asset classification, secrets management, authentication, authorization, perlindungan data, input/output handling, API security, AI security, database & backup security, vulnerability management, incident response, secure development lifecycle, dan security exceptions.
+- **`standards/PRODUCT_STANDARD.md`** — menerjemahkan prinsip produk NAZE_CORE.md menjadi standar yang berlaku untuk semua jenis produk Naze: product lifecycle, discovery, definition, scope management, use case, requirements, feature management, MVP, design, accessibility, performance, reliability, privacy, validation, release, versioning, monitoring, metrics, bug management, ownership, deprecation, retirement, AI-assisted development, anti-patterns, dan product quality gates.
 
 ## Status Repository
 
-**Core & Standards Initialized.** Repository berisi NAZE_CORE.md, ENGINEERING_STANDARD.md, SECURITY_STANDARD.md, dan README.md. Tidak ada source code aplikasi, database, API, authentication, deployment, CI/CD, website, logo, atau fitur produk pada tahap ini. Status legal Naze belum ditetapkan dan tidak diklaim oleh dokumen mana pun di repository ini.
+**Core & Level 2 Standards Initialized.** Repository berisi NAZE_CORE.md, ketiga standar Level 2 (Engineering, Security, Product), dan README.md. Tidak ada source code aplikasi, database, API, authentication, deployment, CI/CD, website, logo, atau fitur produk pada tahap ini. Status legal Naze belum ditetapkan dan tidak diklaim oleh dokumen mana pun di repository ini.
 
 ## Dokumen Foundation sebagai Acuan
 
